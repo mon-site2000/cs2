@@ -35,4 +35,37 @@ function getCookie(name) {
   
   // On appelle la fonction showCounter au chargement de la page
   window.onload = showCounter;
+
+
+   /// AUTRE
+
+  const firebaseConfig = {
+    apiKey: "votre_api_key",
+    authDomain: "patpat-ba6bf.firebaseapp.com",
+    databaseURL: "https://patpat-ba6bf-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "patpat-ba6bf",
+    storageBucket: "patpat-ba6bf.appspot.com",
+    messagingSenderId: "votre_messaging_sender_id",
+    appId: "68866239812"
+  };
+  
+  // Initialisation Firebase
+  const app = firebase.initializeApp(firebaseConfig);
+  const database = firebase.database();
+  
+  // Référence à l'emplacement des utilisateurs connectés
+  const connectionsRef = database.ref("/connections");
+  
+  // Suivre la connexion d'un utilisateur
+  const userRef = connectionsRef.push();
+  
+  // Lorsqu'un utilisateur se déconnecte
+  userRef.onDisconnect().remove();
+  
+  // Compter le nombre d'utilisateurs connectés
+  connectionsRef.on("value", (snapshot) => {
+    const connectedUsers = snapshot.numChildren();
+    document.getElementById("userCount").innerText = `Nombre de personnes connectées : ${connectedUsers}`;
+  });
+  
   
