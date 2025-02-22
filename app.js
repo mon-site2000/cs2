@@ -10,7 +10,7 @@ class CS2UtilityApp {
         this.initializeTypeButtons();
         this.renderNades();
     }
-
+    
     initializeMapButtons() {
         const mapButtons = document.getElementById('mapButtons');
         nadeData.maps.forEach(map => {
@@ -34,8 +34,8 @@ class CS2UtilityApp {
     initializeSideButtons() {
         const sideButtons = document.getElementById('sideButtons');
         const sides = [
-            { id: 'T', label: 'Terroristes' },
-            { id: 'CT', label: 'Antiterroristes' }
+            { id: 'T', label: 'Terrorists' },
+            { id: 'CT', label: 'ConterTerrorists' }
         ];
     
         sides.forEach(side => {

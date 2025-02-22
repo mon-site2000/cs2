@@ -1,11 +1,12 @@
 const nadeData = {
-    maps: ['mirage', 'inferno', 'ancient', 'overpass', 'nuke', 'vertigo', 'anubis'],
+    maps: ['mirage', 'inferno', 'ancient', 'overpass', 'nuke', 'vertigo', 'anubis', 'train'],
     types: [
         { id: 'flash', label: 'Flash' },
         { id: 'smoke', label: 'Smoke' },
         { id: 'molotov', label: 'Molotov' },
         { id: 'he', label: 'HE' }
     ],
+
     nades: [
         {
             id: '1',
@@ -26,14 +27,14 @@ const nadeData = {
         },
         {
             id: '2',
-            title: 'A CT smoke',
+            title: 'CT smoke A',
             map: 'mirage',
             type: 'smoke',
             difficulty: 'easy',
             side: 'T',
-            description: 'Smoke CT spawn to T spawn',
+            description: 'Perfect smoke for A site',
             imageUrl: 'img/ct_smoke.jpg',
-            videoUrl: 'https://youtu.be/Qr3R-IN7RII', // Ajout du lien YouTube
+            videoUrl: 'https://youtu.be/Qr3R-IN7RII',
             position: {
                 from: 'T spawn',
                 to: 'CT spawn'
@@ -43,20 +44,54 @@ const nadeData = {
         },
         {
             id: '3',
-            title: 'A CT smoke for B site',
+            title: 'T smoke for B site',
             map: 'inferno',
             type: 'smoke',
             difficulty: 'easy',
             side: 'T',
-            description: 'Smoke CT to banana',
+            description: 'Perfect smoke for exec B site',
             imageUrl: 'img/banane.jpg',
-            videoUrl: 'https://youtu.be/Kflwu8Iffw0', // Ajout du lien YouTube
+            videoUrl: 'https://youtu.be/Kflwu8Iffw0',
             position: {
                 from: 'Banana',
                 to: 'CT'
             },
             technique: 'jump-throw',
             tags: ['a execute', 'entry']
+        },
+        {
+            id: '4',
+            title: 'Vent smoke for B site',
+            map: 'vertigo',
+            type: 'smoke',
+            difficulty: 'medium',
+            side: 'T',
+            description: 'Perfect smoke for B site',
+            imageUrl: 'img/vent_vertigo.jpg',
+            videoUrl: 'https://youtu.be/1ksz79f9LXQ',
+            position: {
+                from: 'T spawn',
+                to: 'Vent'
+            },
+            technique: 'jump-throw',
+            tags: ['a execute', 'entry']
+        },
+        {
+            id: '5',
+            title: 'Red room smoke for mid',
+            map: 'ancient',
+            type: 'smoke',
+            difficulty: 'medium',
+            side: 'T',
+            description: 'Perfect smoke for rush mid',
+            imageUrl: 'img/red_room.jpg',
+            videoUrl: 'https://youtu.be/rxjTVSBVe_4',
+            position: {
+                from: 'T spawn',
+                to: 'Red room'
+            },
+            technique: 'jump-throw',
+            tags: ['a execute', 'mid']
         },
     ]
 };
