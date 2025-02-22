@@ -3,61 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 Utility Guide</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <!-- test-->
-    <script src="https://www.gstatic.com/firebasejs/9.x/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.x/firebase-database.js"></script>
-    <!-- test-->
-    <title>Game Patpat</title>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+
 </head>
 <body>
-    <header>
-        <h1>Game Portal</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="programme.html">Programme</a></li>
-                <li><a href="about.html">A propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="plus.html">Plus</a></li>
-                
-                <!--<li><a href="mygame.html">Games</a></li>-->
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <h2>Bienvenue !!</h2>
-        <p>Le site est encore en cours de développement</p>
-    </section>
+    <div class="container">
+        <header>
+            <h1>CS2 Utility Guide</h1>
+        </header>
 
-    <section id="games">
-        <h2>Vedette</h2>
+        <div class="filters">
+            <div class="map-selector">
+                <h2>Sélectionner une carte</h2>
+                <div class="map-buttons" id="mapButtons"></div>
+            </div>
 
-    </section>
+            <div class="type-selector">
+                <h2>Type de grenade</h2>
+                <div class="type-buttons" id="typeButtons"></div>
+            </div>
 
-    <section id="about">
-        <h2>A propos</h2>
-        <p></p>
-    </section>
+            <div class="side-selector">
+                <h2>Côté</h2>
+                <div class="side-buttons" id="sideButtons"></div>
+            </div>
+            
 
-    <section id="contact">
-        <h2>Nous contacter</h2>
-    </section>
+            
+        </div>
 
-    <footer>
-        <p>&copy; 2024 Patpat2000. All rights reserved.</p>
-        <br>Nombre visite :
-        <script type="text/javascript" src="//compteur.websiteout.com/js/7/0/0/1"></script>
 
-        
-        <!-- test -->
-        <div id="userCount">Nombre de personnes connectées : 0</div>
-        <!-- test-->
+        <main class="nade-grid" id="nadeGrid"></main>
+    </div>
 
-        <br>
-    </footer>
+    <template id="nadeCardTemplate">
+        <div class="nade-card">
+            <img class="nade-image" src="" alt="">
+            <div class="nade-content">
+                <div class="nade-header">
+                    <span class="nade-type"></span>
+                    <span class="nade-side"></span>
+                </div>
 
+                <h3 class="nade-title"></h3>
+                <div class="nade-position">
+                    <span class="from"></span>
+                    <span class="arrow">→</span>
+                    <span class="to"></span>
+                </div>
+
+                <div class="nade-details">
+                    <span class="technique"></span>
+                    <span class="difficulty"></span>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    
 </body>
 </html>

@@ -1,49 +1,149 @@
-body {
-    font-family: 'Arial', sans-serif;
+:root {
+    --color-bg: #f3f4f6;
+    --color-white: #ffffff;
+    --color-primary: #3b82f6;
+    --color-gray: #6b7280;
+    --color-gray-light: #e5e7eb;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #222;
-    color: white;
 }
 
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--color-bg);
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+h1 {
+    font-size: 2rem;
+    color: #111827;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.filters {
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #374151;
 }
 
-section {
-    padding: 20px;
+.map-buttons, .type-buttons, .side-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: var(--color-gray-light);
+    color: var(--color-gray);
+}
+
+button.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.nade-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.nade-card {
+    background-color: var(--color-white);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+}
+
+.nade-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nade-image {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.nade-content {
+    padding: 1rem;
+}
+
+.nade-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.nade-type, .nade-side {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.nade-title {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: #111827;
+}
+
+.nade-position {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-gray);
+    margin-bottom: 0.5rem;
+}
+
+.nade-details {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: var(--color-gray);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0.5rem;
+    }
     
+    .nade-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
