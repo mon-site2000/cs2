@@ -26,7 +26,7 @@ const nadeData = {
         },
         {
             id: '2',
-            title: 'A Main Flash',
+            title: 'A CT smoke',
             map: 'mirage',
             type: 'smoke',
             difficulty: 'easy',
@@ -40,6 +40,23 @@ const nadeData = {
             },
             technique: 'jump-throw',
             tags: ['a execute', 'entry']
-        }
+        },
+        {
+            id: '3',
+            title: 'A CT smoke for B site',
+            map: 'inferno',
+            type: 'smoke',
+            difficulty: 'easy',
+            side: 'T',
+            description: 'Smoke CT to banana',
+            imageUrl: 'img/banane.jpg',
+            videoUrl: 'https://youtu.be/Kflwu8Iffw0', // Ajout du lien YouTube
+            position: {
+                from: 'Banana',
+                to: 'CT'
+            },
+            technique: 'jump-throw',
+            tags: ['a execute', 'entry']
+        },
     ]
 };
