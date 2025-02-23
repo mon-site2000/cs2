@@ -176,7 +176,7 @@ const nadeData = {
                 from: 'A',
                 to: 'water'
             },
-            technique: 'jump-throw',
+            technique: 'jump-throw + forward',
             tags: ['fix', 'mid']
         },
         {
