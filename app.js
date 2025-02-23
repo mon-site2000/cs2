@@ -109,6 +109,9 @@ class CS2UtilityApp {
             card.querySelector('.to').textContent = nade.position.to;
             card.querySelector('.technique').textContent = nade.technique;
             card.querySelector('.difficulty').textContent = nade.difficulty;
+            card.querySelector('.difficulty').textContent = nade.difficulty;
+            card.querySelector('.difficulty').classList.add(`difficulty-${nade.difficulty}`);
+
 
 
             // Rendre la carte cliquable pour ouvrir la vidéo

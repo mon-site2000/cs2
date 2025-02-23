@@ -13,7 +13,7 @@ const nadeData = {
             title: 'Window Smoke',
             map: 'mirage',
             type: 'smoke',
-            difficulty: 'medium',
+            difficulty: 'hard',
             side: 'T',
             description: 'Perfect smoke to block window',
             imageUrl: 'img/window.png',
@@ -34,7 +34,7 @@ const nadeData = {
             side: 'T',
             description: 'Perfect smoke for A site',
             imageUrl: 'img/ct_smoke.jpg',
-            videoUrl: 'https://youtu.be/Qr3R-IN7RII',
+            videoUrl: 'https://youtu.be/pPfUEq-1MDk',
             position: {
                 from: 'T spawn',
                 to: 'CT spawn'
