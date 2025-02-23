@@ -127,5 +127,94 @@ const nadeData = {
             technique: 'crouch + jump-throw',
             tags: ['rush', 'A']
         },
+
+        {
+            id: '8',
+            title: 'Smoke mid',
+            map: 'anubis',
+            type: 'smoke',
+            difficulty: 'easy',
+            side: 'T',
+            description: 'Perfect smoke for rush mid',
+            imageUrl: 'img/mid_anubis.jpg',
+            videoUrl: 'https://youtu.be/3pVQFpoftmw',
+            position: {
+                from: 'T spawn',
+                to: 'mid'
+            },
+            technique: 'jump-throw',
+            tags: ['rush', 'mid']
+        },
+        {
+            id: '9',
+            title: 'Molotov mid',
+            map: 'anubis',
+            type: 'molotov',
+            difficulty: 'medium',
+            side: 'CT',
+            description: 'Perfect smoke for bloc rush mid',
+            imageUrl: 'img/molo_mid.jpg',
+            videoUrl: 'https://youtu.be/Is6L1H7EbDc',
+            position: {
+                from: 'A',
+                to: 'water'
+            },
+            technique: 'jump-throw',
+            tags: ['fix', 'mid']
+        },
+        {
+            id: '10',
+            title: 'HE mid anubis',
+            map: 'anubis',
+            type: 'he',
+            difficulty: 'medium',
+            side: 'CT',
+            description: 'Perfect HE mid',
+            imageUrl: 'img/HE_cs2.webp',
+            videoUrl: 'https://youtu.be/yuFJB-lOxSg',
+            position: {
+                from: 'A',
+                to: 'water'
+            },
+            technique: 'jump-throw',
+            tags: ['fix', 'mid']
+        },
+        {
+            id: '11',
+            title: 'Smoke short',
+            map: 'ancient',
+            type: 'smoke',
+            difficulty: 'medium',
+            side: 'T',
+            description: 'Perfect smoke for short site B',
+            imageUrl: 'img/smoke_short.jpg',
+            videoUrl: 'https://youtu.be/xwryP6JKyC4',
+            position: {
+                from: 'Ruins',
+                to: 'Short'
+            },
+            technique: 'jump-throw',
+            tags: ['exec', 'B']
+        },
+        {
+            id: '12',
+            title: 'Smoke long',
+            map: 'ancient',
+            type: 'smoke',
+            difficulty: 'medium',
+            side: 'T',
+            description: 'Perfect smoke for long site B',
+            imageUrl: 'img/smoke_long.jpg',
+            videoUrl: 'https://youtu.be/t8nVBmTTP90',
+            position: {
+                from: 'Ruins',
+                to: 'long'
+            },
+            technique: 'jump-throw',
+            tags: ['exec', 'B']
+        },
+
+
+
     ]
 };
