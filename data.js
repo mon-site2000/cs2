@@ -93,5 +93,39 @@ const nadeData = {
             technique: 'jump-throw',
             tags: ['a execute', 'mid']
         },
+        {
+            id: '6',
+            title: 'Smoke main for A',
+            map: 'ancient',
+            type: 'smoke',
+            difficulty: 'medium',
+            side: 'CT',
+            description: 'Perfect smoke for fix A',
+            imageUrl: 'img/A_main.jpg',
+            videoUrl: 'https://youtu.be/9ibK_eT8sFU',
+            position: {
+                from: 'CT spawn',
+                to: 'A main'
+            },
+            technique: 'jump-throw',
+            tags: ['fixe', 'A']
+        },
+        {
+            id: '7',
+            title: 'Smoke for ct lane',
+            map: 'ancient',
+            type: 'smoke',
+            difficulty: 'medium',
+            side: 'T',
+            description: 'Perfect smoke for rush A',
+            imageUrl: 'img/CT_lane.jpg',
+            videoUrl: 'https://youtu.be/eMXh-7v3Nag',
+            position: {
+                from: 'Smoker',
+                to: 'CT lane'
+            },
+            technique: 'crouch + jump-throw',
+            tags: ['rush', 'A']
+        },
     ]
 };
