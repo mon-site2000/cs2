@@ -135,7 +135,30 @@ class CS2UtilityApp {
     }
 }
 
+
+
+
+
+document.getElementById('search-bar').addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    const nadeCards = document.querySelectorAll('.nade-card');
+
+    nadeCards.forEach(card => {
+        const title = card.querySelector('.nade-title').textContent.toLowerCase();
+        
+        if (title.includes(searchTerm)) {
+            card.style.display = "block"; // Affiche la carte
+        } else {
+            card.style.display = "none"; // Cache la carte
+        }
+    });
+});
+
+
 // Initialisation de l'application
 document.addEventListener('DOMContentLoaded', () => {
     new CS2UtilityApp();
 });
+
+
+

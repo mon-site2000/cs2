@@ -213,8 +213,39 @@ const nadeData = {
             technique: 'jump-throw',
             tags: ['exec', 'B']
         },
-
-
-
+        {
+            id: '13',
+            title: 'Flash mid',
+            map: 'vertigo',
+            type: 'flash',
+            difficulty: 'medium',
+            side: 'CT',
+            description: 'Perfect flash for control mid',
+            imageUrl: 'img/vertigo.webp',
+            videoUrl: 'https://youtu.be/a0nVTApUBRU',
+            position: {
+                from: 'CT spawn',
+                to: 'mid'
+            },
+            technique: 'jump-throw + right clic',
+            tags: ['control', 'mid']
+        },
+        {
+            id: '14',
+            title: 'Smoke mid',
+            map: 'ancient',
+            type: 'smoke',
+            difficulty: 'hard',
+            side: 'CT',
+            description: 'Perfect smoke for control mid',
+            imageUrl: 'img/mid_ancient.jpg',
+            videoUrl: 'https://youtu.be/DSCJPxKxO7Q',
+            position: {
+                from: 'CT spawn',
+                to: 'mid'
+            },
+            technique: 'jump-throw + d',
+            tags: ['control', 'mid']
+        },
     ]
 };

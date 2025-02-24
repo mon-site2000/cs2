@@ -302,4 +302,43 @@ input:checked + .slider:before {
 }
 
 
+/* Conteneur de la barre de recherche */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+/* 🌞 Mode clair (par défaut) */
+#search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--color-gray-light);
+    border-radius: 0.5rem;
+    background-color: var(--color-white);
+    color: var(--color-gray);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Effet focus */
+#search-bar:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+/* 🌙 Mode sombre */
+.dark-mode #search-bar {
+    background-color: #1f2937; /* Fond sombre */
+    color: #f3f4f6; /* Texte clair */
+    border: 1px solid #374151; /* Bordure adaptée */
+}
+
+/* Effet focus en mode sombre */
+.dark-mode #search-bar:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.7);
+}
 
